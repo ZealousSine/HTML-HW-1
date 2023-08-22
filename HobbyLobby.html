@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="StyleCSS.css" id="styleSheetLink" />
+        <title>Hobby Lobby</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="menu">
+                    <a href="Index.html">Main Page</a>
+                    <a href="About.html">About Me</a>
+                    <a href="HobbyLobby.html">Hobby Lobby</a>
+                    <button id="styleSwitchBtn">Switch Style</button>
+            </nav>
+            <header>
+                <h1 class="title">Hobby Lobby</h1>
+            </header>
+            <main>
+                <h2>My hobbies are:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Gaming</th>
+                            <th>Watch Animated Shows</th>
+                            <th>Reading Comics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Favorite</td>
+                            <td>Yakuza 0</td>
+                            <td>Insomniacs After School</td>
+                            <td>Perfect World</td>
+                        </tr>
+                        <tr>
+                            <td>Image</td>
+                            <td><img src="Images/Yakuza0.jpg" alt="Image 2" width="100" height="150"></td>
+                            <td><img src="Images/Insomniacs.jpg" alt="Image 3" width="100" height="150"></td>
+                            <td><img src="Images/PerfectWorld.jpg" alt="Image 4" width="100" height="150"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        <script>
+            const styleSwitchBtn = document.getElementById('styleSwitchBtn');
+            const styleSheetLink = document.getElementById('styleSheetLink');
+            let isStyle1 = true;
+    
+            styleSwitchBtn.addEventListener('click', () => {
+                if (isStyle1) {
+                    styleSheetLink.href = 'Style2CSS.css';
+                } else {
+                    styleSheetLink.href = 'StyleCSS.css';
+                }
+                isStyle1 = !isStyle1;
+            });
+        </script>
+    </body>
+</html>

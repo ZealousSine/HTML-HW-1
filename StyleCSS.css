@@ -1,0 +1,107 @@
+.container {
+    background-color: #f5f5f5;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ff0080;
+    padding: 15px;
+}
+
+body {
+    background-color: #e8e5e5eb;
+}
+
+.menu a{
+    text-decoration: none;
+    color:#f5f5f5
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.title {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    align-items: center;
+}
+
+main ul li {
+    list-style-type: none;
+    justify-items: center;
+}
+
+main ul .name{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+main ul .id{
+    font-size: large;
+    font-weight: 200;
+}
+
+main ul .college{
+    font-size: medium;
+    font-weight: 200;
+}
+
+main ol {
+    text-align: center;
+    padding: 0;
+    list-style-position: inside;
+    font-size: larger;
+}
+
+main ol li{
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-family: fantasy;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tr:first-child td {
+    background-color: #f5f5f5;
+}
+
+tr td:not(:first-child) {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
