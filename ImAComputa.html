@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="ImAComputa.css" id="styleSheetLink" />
+    <title>Computer Picker Upper</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <a href="index.html">Main Page</a>
+            <a href="About.html">About Me</a>
+            <a href="HobbyLobby.html">Hobby Lobby</a>
+            <a href="ImAComputa.html">Computer Picker Upper</a>
+            <button id="styleSwitchBtn" disabled>Switch CSS</button>
+        </nav>
+        <header>
+            <h1 class="title">Customize Your Computer</h1>
+        </header>
+        <main>
+            <form id="computerForm" action="CheckOut.html">
+                <table class="customtable">
+                    <thead>
+                        <tr>
+                            <th>Components</th>
+                            <th>Parts</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Processor Section -->
+                        <tr>
+                            <td>
+                                <label for="processor">Processor:</label>
+                            </td>
+                            <td>
+                                <select id="processor" name="processor">
+                                    <option value="select" data-image="Images\PcParts\Processors\Select-CPU.png">None</option>
+                                    <optgroup label="Intel">
+                                        <option value="i3" data-image="Images\PcParts\Processors\i3-121000.jpg">Intel Core i3-12100 ($114.99)</option>
+                                        <option value="i5" data-image="Images\PcParts\Processors\i5-12400F.jpg">Intel Core i5-12400F ($139.99)</option>
+                                        <option value="i7" data-image="Images\PcParts\Processors\i7-12700K.jpg">Intel Core i7-12700K ($268)</option>
+                                    </optgroup>
+                                    <optgroup label="AMD">
+                                        <option value="ryzen3" data-image="Images\PcParts\Processors\AMD-Ryzen-3-3200G.jpg">AMD Ryzen 3 3200G ($85)</option>
+                                        <option value="ryzen5" data-image="Images\PcParts\Processors\AMD-Ryzen-5-5600.jpg">AMD Ryzen 5 5600 ($145.15)</option>
+                                        <option value="ryzen7" data-image="Images\PcParts\Processors\AMD-Ryzen-7-3800X.jpg">AMD Ryzen 7 3800X ($288)</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                            <td>
+                                <img src="Images\PcParts\Processors\Select-CPU.png" alt="Processor Image" width="100" height="100">
+                            </td>
+                        </tr>
+                        <!-- Graphics Card Section -->
+                        <tr>
+                            <td>
+                                <label for="graphicsCard">Graphics Card:</label>
+                            </td>
+                            <td>
+                                <select id="graphicsCard" name="graphicsCard">
+                                    <option value="select" data-image="Images\PcParts\GraphicsCards\Select-GraphicsCard.png" >None</option>
+                                    <optgroup label="NVIDIA">
+                                        <option value="gtx1660" data-image="Images\PcParts\GraphicsCards\GeForce-GTX-1660-Super.jpg">GeForce GTX 1660 Super ($238.99)</option>
+                                        <option value="rtx3070" data-image="Images\PcParts\GraphicsCards\GeForce-RTX-3070-Ti.jpg">GeForce RTX 3070 Ti ($711)</option>
+                                    </optgroup>
+                                    <optgroup label="AMD">
+                                        <option value="rx6800" data-image="Images\PcParts\GraphicsCards\Radeon-RX-6800-XT.jpg">Radeon RX 6800 XT ($499.99)</option>
+                                        <option value="rx6900" data-image="Images\PcParts\GraphicsCards\Radeon-RX-6900-XT.jpg">Radeon RX 6900 XT ($769.99)</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                            <td>
+                                <img src="Images\PcParts\GraphicsCards\Select-GraphicsCard.png" alt="Graphics Card Image" width="100" height="100">
+                            </td>
+                        </tr>
+                        <!-- RAM Section -->
+                        <tr>
+                            <td>
+                                <label for="ram">RAM:</label>
+                            </td>
+                            <td>
+                                <select id="ram" name="ram">
+                                    <option value="select" data-image="Images\PcParts\Ram\Select-Ram.png" >None</option>
+                                    <option value="8gb" data-image="Images\PcParts\Ram\8GB-Ram.jpg">8GB DDR4 ($19.99)</option>
+                                    <option value="16gb" data-image="Images\PcParts\Ram\16GB-Ram.jpg">16GB DDR4 ($39.99)</option>
+                                    <option value="32gb" data-image="Images\PcParts\Ram\32GB-Ram.jpg">32GB DDR4 ($59.99)</option>
+                                    <option value="64gb" data-image="Images\PcParts\Ram\64GB-Ram.jpg">64GB DDR4 ($151.99)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <img src="Images\PcParts\Ram\Select-Ram.png" alt="RAM Image" width="100" height="100">
+                            </td>
+                        </tr>
+                        <!-- Storage Section -->
+                        <tr>
+                            <td>
+                                <label for="storage">Storage:</label>
+                            </td>
+                            <td>
+                                <select id="storage" name="storage">
+                                    <option value="select" data-image="Images\PcParts\Storage\Select-Storage.png">None</option>
+                                    <optgroup label="SSD">
+                                        <option value="256gbSDD" data-image="Images\PcParts\Storage\SSD256gb.jpg">256GB SSD ($17.98)</option>
+                                        <option value="512gbSDD" data-image="Images\PcParts\Storage\SSD512gb.jpg">512GB SSD ($23.97)</option>
+                                        <option value="1tbSDD" data-image="Images\PcParts\Storage\SSD1tb.jpg">1TB SSD ($39.99)</option>
+                                    </optgroup>
+                                    <optgroup label="HDD">
+                                        <option value="8tbHDD" data-image="Images\PcParts\Storage\HDD8tb.jpg">8TB HDD ($169.16)</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                            <td>
+                                <img src="Images\PcParts\Storage\Select-Storage.png" alt="Storage Image" width="100" height="100">
+                            </td>
+                        </tr>
+                        <!-- Power Supply Section -->
+                        <tr>
+                            <td>
+                                <label for="power">Power Supply:</label>
+                            </td>
+                            <td>
+                                <select id="power" name="power">
+                                    <option value="select" data-image="Images\PcParts\PowerSupply\Select-Power.png">None</option>
+                                    <option value="750W" data-image="Images\PcParts\PowerSupply\750W.jpg">750 Watts ($99.99)</option>
+                                    <option value="850W" data-image="Images\PcParts\PowerSupply\850W.jpg">850 Watts ($147.99)</option>
+                                    <option value="1kW" data-image="Images\PcParts\PowerSupply\1kW.jpg">1000 Watts ($169.99)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <img src="Images\PcParts\PowerSupply\Select-Power.png" alt="Power Image" width="100" height="100">
+                            </td>
+                        </tr>
+                        <!-- Extra Rows-->
+                        <tr id="extrasRow" class="hidden-row">
+                            <td>
+                                <label for="extras">Extras:</label>
+                            </td>
+                            <td>
+                                <select id="extras" name="extras">
+                                    <option value="select" data-image="Images\PcParts\ExtrasImg\Select-Extras.jpg">None</option>
+                                    <option value="Keyboard" data-image="Images\PcParts\ExtrasImg\Keyboard.jpg">Corsair K60 RGB Pro ($81.94)</option>
+                                    <option value="Mouse" data-image="Images\PcParts\ExtrasImg\Mouse.jpg">Logitech G502 HERO ($36.99)</option>
+                                    <option value="Headphones" data-image="Images\PcParts\ExtrasImg\Headset.jpg">Corsair Viruoso RGB ($149.99)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <img src="Images\PcParts\ExtrasImg\Select-Extras.jpg" alt="Power Image" width="100" height="100">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <input type="hidden" name="basePrice" id="hiddenBasePrice" value="0">
+                <input type="hidden" name="salesTax" id="hiddenSalesTax" value="0">
+
+                <p>Total Price: $<span id="totalPrice">0.00</span></p>
+                <p>Total Price with Tax: $<span id="totalPriceWithTax">0.00</span></p>
+                <button type="submit">Checkout</button>
+                <button type="button" id="toggleExtrasBtn">Click For Extras</button>
+
+            </form>
+        </main>
+    </div>
+    <script>
+        const computerForm = document.getElementById('computerForm');
+        const totalPrice = document.getElementById('totalPrice');
+        const hiddenBasePrice = document.getElementById('hiddenBasePrice');
+        const hiddenSalesTax = document.getElementById('hiddenSalesTax');
+
+        computerForm.addEventListener('change', () => {
+            const selectedProcessor = document.getElementById('processor').value;
+            const selectedGraphicsCard = document.getElementById('graphicsCard').value;
+            const selectedRam = document.getElementById('ram').value;
+            const selectedStorage = document.getElementById('storage').value;
+            const selectedPower = document.getElementById('power').value;
+            const selectedExtras = document.getElementById('extras').value;
+            let price = 0;
+
+            // Processor prices
+            if (selectedProcessor === 'i3') {
+                price += 114.99;
+            } else if (selectedProcessor === 'i5') {
+                price += 139.99;
+            }else if (selectedProcessor === 'i7') {
+                price += 268;
+            } else if (selectedProcessor === 'ryzen3') {
+                price += 85;
+            }  else if (selectedProcessor === 'ryzen5') {
+                price += 145.15;
+            }  else if (selectedProcessor === 'ryzen7') {
+                price += 288;
+            }
+
+            // Graphics card prices
+            if (selectedGraphicsCard === 'gtx1660') {
+                price += 238.99;
+            } else if (selectedGraphicsCard === 'rtx3070') {
+                price += 711;
+            } else if (selectedGraphicsCard === 'rx6800') {
+                price += 499.99;
+            } else if (selectedGraphicsCard === 'rx6900') {
+                price += 769.99;
+            }
+
+            // RAM prices
+            if (selectedRam === '8gb') {
+                price += 19.99;
+            } else if (selectedRam === '16gb') {
+                price += 39.99;
+            } else if (selectedRam === '32gb') {
+                price += 59.99;
+            } else if (selectedRam === '64gb') {
+                price += 151.99;
+            }
+
+            // Storage prices
+            if (selectedStorage === '256gbSDD') {
+                price += 17.98;
+            } else if (selectedStorage === '512gbSDD') {
+                price += 23.97;
+            } else if (selectedStorage === '1tbSDD') {
+                price += 39.99;
+            }else if (selectedStorage === '8tbHDD') {
+                price += 169.16;
+            }
+
+            // Power Supply prices
+            if (selectedPower === '750W') {
+                price += 99.99;
+            } else if (selectedPower === '850W') {
+                price += 147.99;
+            } else if (selectedPower === '1kW') {
+                price += 169.99;
+            }
+
+            // Extra Prices
+            if (selectedExtras === 'Keyboard') {
+                price += 81.94;
+            } else if (selectedExtras === 'Mouse') {
+                price += 36.99;
+            } else if (selectedExtras === 'Headphones') {
+                price += 149.99;
+            }
+
+            totalPrice.textContent = price.toFixed(2);
+            
+            const taxRate = 0.115;
+            const totalPriceWithTax = price + (price * taxRate);
+            document.getElementById('totalPriceWithTax').textContent = totalPriceWithTax.toFixed(2);
+            
+            // Update hidden fields to pass data to CheckOut.html (headhurts)
+            hiddenBasePrice.value = price.toFixed(2);
+            hiddenSalesTax.value = (price * 0.115).toFixed(2);
+        });
+
+        // Update the images
+        function updateComponentImage(componentSelect) {
+            const selectedOption = componentSelect.options[componentSelect.selectedIndex];
+            const imagePath = selectedOption.getAttribute('data-image');
+            const imageCell = componentSelect.closest('tr').querySelector('td:last-child img');
+            imageCell.src = imagePath;
+        }
+
+        const processorSelect = document.getElementById('processor');
+        processorSelect.addEventListener('change', () => {
+            updateComponentImage(processorSelect);
+        });
+
+        const graphicsCardSelect = document.getElementById('graphicsCard');
+        graphicsCardSelect.addEventListener('change', () => {
+            updateComponentImage(graphicsCardSelect);
+        });
+
+        const ramSelect = document.getElementById('ram');
+        ramSelect.addEventListener('change', () => {
+            updateComponentImage(ramSelect);
+        });
+
+        const storageSelect = document.getElementById('storage');
+        storageSelect.addEventListener('change', () => {
+            updateComponentImage(storageSelect);
+        });
+
+        const powerSelect = document.getElementById('power');
+        powerSelect.addEventListener('change', () => {
+            updateComponentImage(powerSelect);
+        });
+
+        const extrasSelect = document.getElementById('extras');
+        extrasSelect.addEventListener('change', () => {
+            updateComponentImage(extrasSelect);
+        });
+
+        const toggleExtrasBtn = document.getElementById('toggleExtrasBtn');
+        const extrasRow = document.getElementById('extrasRow');
+
+        extrasRow.style.display = 'none';
+        toggleExtrasBtn.addEventListener('click', () => {
+            if (extrasRow.style.display === 'none') {
+                extrasRow.style.display = 'table-row'; // SHOW the row
+            } else {
+                extrasRow.style.display = 'none'; // HIDE the row
+            }
+        });
+    </script>
+</body>
+</html>
