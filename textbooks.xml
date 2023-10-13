@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="textbook.xsl"?>
+<textbooks>
+    <textBook1>
+    
+        <title>The Art of Game Design, A Book of Lenses</title>
+        <author>
+            <firstName>Jesse</firstName>
+            <lastName>Schell</lastName>
+        </author>
+        <publisher>
+            <name>CRC Press</name>
+            <website>https://www.routledge.com/go/crc-press</website>
+        </publisher>
+        <publicationYear>2020</publicationYear>
+        <ISBN>9781138632059</ISBN>
+        <bookWebsite>https://schellgames.com/art-of-game-design</bookWebsite>
+        <edition>3rd</edition>
+        <coverType>Paperback</coverType>
+        <totalPages>520</totalPages>
+        <price>$50</price>
+    </textBook1>
+    <textBook2>
+        <title>Introduction To The Theory Of Computation</title>
+        <author>
+            <firstName>Michael</firstName>
+            <lastName>Sipser</lastName>
+        </author>
+        <publisher>
+            <name>Cengage India</name>
+            <website>https://www.cengage.co.in</website>
+        </publisher>
+        <publicationYear>2014</publicationYear>
+        <ISBN>8179922359</ISBN>
+        <bookWebsite>https://math.mit.edu/~sipser/18404/</bookWebsite>
+        <edition>3rd</edition>
+        <coverType>Paperback</coverType>
+        <totalPages>480</totalPages>
+        <price>$20</price>
+    </textBook2>
+</textbooks>

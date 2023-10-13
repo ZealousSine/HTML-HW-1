@@ -1,0 +1,74 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="textbooks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="textBook1">
+          <xs:annotation>
+            <xs:documentation>The Art of Game Design, A Book of Lenses</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="title"/>
+              <xs:element name="author">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="firstName"/>
+                    <xs:element type="xs:string" name="lastName"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="publisher">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="website"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="publicationYear"/>
+              <xs:element type="xs:string" name="ISBN"/>
+              <xs:element type="xs:string" name="bookWebsite"/>
+              <xs:element type="xs:string" name="edition"/>
+              <xs:element type="xs:string" name="coverType"/>
+              <xs:element type="xs:string" name="totalPages"/>
+              <xs:element type="xs:string" name="price"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="textBook2">
+          <xs:annotation>
+            <xs:documentation>Introduction To The Theory Of Computation</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="title"/>
+              <xs:element name="author">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="firstName"/>
+                    <xs:element type="xs:string" name="lastName"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="publisher">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="website"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="publicationYear"/>
+              <xs:element type="xs:string" name="ISBN"/>
+              <xs:element type="xs:string" name="bookWebsite"/>
+              <xs:element type="xs:string" name="edition"/>
+              <xs:element type="xs:string" name="coverType"/>
+              <xs:element type="xs:string" name="totalPages"/>
+              <xs:element type="xs:string" name="price"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

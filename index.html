@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="StyleCSS.css" id="styleSheetLink" />
+        <title>Personal Web Page Thingy</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="menu">
+                    <a href="index.html">Main Page</a>
+                    <a href="About.html">About Me</a>
+                    <a href="HobbyLobby.html">Hobby Lobby</a>
+                    <a href="ImAComputa.html">Computer Picker Upper</a>
+                    <a href="Animate.html">Adobe Animate</a>
+                    <a href="textbooks.xml">Text Books</a>
+                    <button id="styleSwitchBtn">Switch CSS</button>
+            </nav>
+            <header>
+                <h1 class="title">This is Real, This is Me</h1>
+            </header>
+            <main>
+                <img src="Images/MyPicture.jpg" height="300" width="250" alt="IRLFaceReveal">
+                <ul>
+                <li class="name">Xabriel Tirado Roman</li>
+                <li class="id">Id: #130599</li>
+                <li class="college">Polytechnic University</li>
+            </ul>
+            </main>
+        </div>
+        <script>
+            const styleSwitchBtn = document.getElementById('styleSwitchBtn');
+            const styleSheetLink = document.getElementById('styleSheetLink');
+            let isStyle1 = true;
+    
+            styleSwitchBtn.addEventListener('click', () => {
+                if (isStyle1) {
+                    styleSheetLink.href = 'Style2CSS.css';
+                } else {
+                    styleSheetLink.href = 'StyleCSS.css';
+                }
+                isStyle1 = !isStyle1;
+            });
+        </script>
+    </body>
+</html>

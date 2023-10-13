@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="StyleCSS.css" id="styleSheetLink" />
+        <title>Personal Web Page Thingy</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="menu">
+                    <a href="index.html">Main Page</a>
+                    <a href="About.html">About Me</a>
+                    <a href="HobbyLobby.html">Hobby Lobby</a>
+                    <a href="ImAComputa.html">Computer Picker Upper</a>
+                    <a href="Animate.html">Adobe Animate</a>
+                    <a href="textbooks.xml">Text Books</a>
+                    <button id="styleSwitchBtn">Switch CSS</button>
+            </nav>   
+        </div>
+        <main>
+            <h2>My Adobe Animate Thing</h2>
+            <img src="Images\AnimateGif\HW3Animate.gif" alt="HW3Animate Gif" width="500" height="400">
+        </main>
+        <script>
+            const styleSwitchBtn = document.getElementById('styleSwitchBtn');
+            const styleSheetLink = document.getElementById('styleSheetLink');
+            let isStyle1 = true;
+    
+            styleSwitchBtn.addEventListener('click', () => {
+                if (isStyle1) {
+                    styleSheetLink.href = 'Style2CSS.css';
+                } else {
+                    styleSheetLink.href = 'StyleCSS.css';
+                }
+                isStyle1 = !isStyle1;
+            });
+        </script>
+    </body>
+</html>
